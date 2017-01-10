@@ -2,6 +2,8 @@
 
 ## Description
 This class represents a real class @ Codecool, containing mentors and students working at the class.
+You can find more details at our Trello site. (https://trello.com/b/82EL1p6I/mentors-life).
+
 
 ## Parent class
 None
