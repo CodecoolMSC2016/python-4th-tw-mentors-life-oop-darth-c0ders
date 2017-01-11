@@ -4,6 +4,7 @@ from student import *
 import gc
 import codecool_class
 from tools import Tools
+from kitchen import Kitchen
 
 
 def main():
@@ -18,7 +19,9 @@ def main():
           .format(mentor_count, student_count, klassz.name))
     print("Overall energy level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_energy()))
     for student in codecool_class.CodecoolClass.STUDENTS_LIST:
-        Tools.read_book(student)
+        Kitchen.eating(student)
+        Kitchen.drinking(student)
+
     Student.stats()
 
 
