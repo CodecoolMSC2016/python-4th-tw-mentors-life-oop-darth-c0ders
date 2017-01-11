@@ -13,8 +13,8 @@ def main():
 
     student_count = str(len(STUDENTS_LIST))
     mentor_count = str(len(MENTORS_LIST))
-    print("Class {2} created with {0} mentors and {1} students." \
-    .format(mentor_count, student_count, klassz.name))
-    print("Overall energy level at {0} is {1}.".format(klassz.name, CodecoolClass.energy()))
+    print("Class {2} created with {0} mentors and {1} students."
+          .format(mentor_count, student_count, klassz.name))
+    print("Overall energy level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_energy()))
 
 main()
