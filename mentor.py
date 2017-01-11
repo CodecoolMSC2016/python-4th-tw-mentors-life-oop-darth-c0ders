@@ -1,11 +1,8 @@
 from person import Person
-
+import csv
 
 class Mentor(Person):
-    def nickname(self, nickname):
-        self.nickname = nickname
 
+    def __init__(self):
+        self.nick_name = ""
 
-
-class Lounge:
-    def play_playstation(self, play_fifa)
