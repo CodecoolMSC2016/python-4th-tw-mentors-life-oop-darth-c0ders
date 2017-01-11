@@ -19,6 +19,7 @@ def main():
     print("Class {2} created with {0} mentors and {1} students."
           .format(mentor_count, student_count, klassz.name))
     print("Overall energy level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_energy()))
+    print("Overall knowledge level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_knowledge()))
     for student in codecool_class.CodecoolClass.STUDENTS_LIST:
         Kitchen.eating(student)
         Kitchen.drinking(student)
@@ -28,9 +29,12 @@ def main():
         Lounge.dartsing(student)
         Lounge.playstationing(student)
         Lounge.gyming(student)
-        Lounge.beanbag(student)
+        Lounge.beanbag(student)      
 
     Student.stats()
+    print("Overall energy level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_energy()))
+    print("Overall knowledge level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_knowledge()))  
+    
 
 
 main()

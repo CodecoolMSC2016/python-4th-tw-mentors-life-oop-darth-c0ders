@@ -17,11 +17,15 @@ class Lounge:
         obj.energy_level += random.randint(playstation[1],playstation[2])
         obj.knowledge_level += random.randint(playstation[3],playstation[4])
 
+        print("{0} consumed a(n) {1}".format(obj.last_name + obj.first_name, playstation[0]))
+
     @classmethod
     def gyming(cls, obj):
         gym = random.choice(gym_list)
         obj.energy_level += random.randint(gym[1],gym[2])
         obj.knowledge_level += random.randint(gym[3],gym[4])
+
+        print("{0} consumed a(n) {1}".format(obj.last_name + obj.first_name, gym[0]))
 
     @classmethod
     def beanbag(cls, student):
