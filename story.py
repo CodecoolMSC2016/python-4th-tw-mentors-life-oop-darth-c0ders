@@ -5,6 +5,7 @@ import gc
 import codecool_class
 from tools import Tools
 from kitchen import Kitchen
+from lounge import Lounge
 
 
 def main():
@@ -24,6 +25,10 @@ def main():
         Tools.laptoping(student)
         Tools.read_book(student)
         Tools.make_presentation(student)
+        Lounge.dartsing(student)
+        Lounge.playstationing(student)
+        Lounge.gyming(student)
+        Lounge.beanbag(student)
 
     Student.stats()
 
