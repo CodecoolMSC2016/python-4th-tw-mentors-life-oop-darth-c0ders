@@ -21,6 +21,9 @@ def main():
     for student in codecool_class.CodecoolClass.STUDENTS_LIST:
         Kitchen.eating(student)
         Kitchen.drinking(student)
+        Tools.laptoping(student)
+        Tools.read_book(student)
+        Tools.make_presentation(student)
 
     Student.stats()
 
