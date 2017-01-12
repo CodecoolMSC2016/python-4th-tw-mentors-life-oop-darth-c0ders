@@ -6,6 +6,7 @@ import codecool_class
 from tools import Tools
 from kitchen import Kitchen
 from lounge import Lounge
+from company import *
 
 
 def main():
@@ -16,10 +17,12 @@ def main():
 
     student_count = str(len(CodecoolClass.STUDENTS_LIST))
     mentor_count = str(len(CodecoolClass.MENTORS_LIST))
+
     print("Class {2} created with {0} mentors and {1} students."
           .format(mentor_count, student_count, klassz.name))
     print("Overall energy level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_energy()))
     print("Overall knowledge level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_knowledge()))
+
     for student in codecool_class.CodecoolClass.STUDENTS_LIST:
         Kitchen.eating(student)
         Kitchen.drinking(student)
@@ -33,7 +36,8 @@ def main():
 
     Student.stats()
     print("Overall energy level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_energy()))
-    print("Overall knowledge level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_knowledge()))  
+    print("Overall knowledge level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_knowledge()))
+    Company.apply_for_company()
     
 
 
