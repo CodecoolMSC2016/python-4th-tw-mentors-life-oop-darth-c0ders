@@ -3,7 +3,6 @@ from student import Student
 import csv
 
 
-
 class CodecoolClass:
 
     MENTORS_LIST = []
@@ -43,10 +42,10 @@ class CodecoolClass:
         TOTAL_ENERGY = 0
         for student in CodecoolClass.STUDENTS_LIST:
             TOTAL_ENERGY += student.energy_level
-        return int(TOTAL_ENERGY)
+        print("Class overall energy is {}".format(int(TOTAL_ENERGY)))
 
     def check_class_knowledge():
         TOTAL_KNOWLEDGE = 0
         for student in CodecoolClass.STUDENTS_LIST:
             TOTAL_KNOWLEDGE += student.knowledge_level
-        return int(TOTAL_KNOWLEDGE)
+        print("Class overall knowledge is {}".format(int(TOTAL_KNOWLEDGE)))

@@ -9,7 +9,7 @@ from lounge import Lounge
 from company import *
 
 
-def main():
+def buildProgram():
     CodecoolClass.import_mentors()
     CodecoolClass.import_students()
     klassz = CodecoolClass
@@ -17,28 +17,4 @@ def main():
 
     student_count = str(len(CodecoolClass.STUDENTS_LIST))
     mentor_count = str(len(CodecoolClass.MENTORS_LIST))
-
-    print("Class {2} created with {0} mentors and {1} students."
-          .format(mentor_count, student_count, klassz.name))
-    print("Overall energy level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_energy()))
-    print("Overall knowledge level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_knowledge()))
-
-    for student in codecool_class.CodecoolClass.STUDENTS_LIST:
-        Kitchen.eating(student)
-        Kitchen.drinking(student)
-        Tools.laptoping(student)
-        Tools.read_book(student)
-        Tools.make_presentation(student)
-        Lounge.dartsing(student)
-        Lounge.playstationing(student)
-        Lounge.gyming(student)
-        Lounge.beanbag(student)      
-
-    Student.stats()
-    print("Overall energy level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_energy()))
-    print("Overall knowledge level at {0} is {1}.".format(klassz.name, CodecoolClass.check_class_knowledge()))
-    Company.apply_for_company()
-    
-
-
-main()
+#\033[94m
