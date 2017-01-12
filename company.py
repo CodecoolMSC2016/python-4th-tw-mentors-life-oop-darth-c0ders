@@ -7,6 +7,7 @@ from tools import Tools
 from kitchen import Kitchen
 from lounge import Lounge
 
+
 class Company:
 
     def apply_for_company():
@@ -19,5 +20,3 @@ class Company:
         print(str(len(applied_students)) + " members applied to company. They are:")
         for student in applied_students:
             print(student.last_name + " " + student.first_name)
-                
-

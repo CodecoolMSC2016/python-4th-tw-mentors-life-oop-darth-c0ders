@@ -5,6 +5,7 @@ from kitchen import *
 from lounge import *
 from tools import *
 
+
 USER_STEPS = 0
 MENU_POSITION = 1
 MENU_ITEMS = ["### MENU ###",
@@ -39,9 +40,10 @@ def getchar():
 
 def draw_steps():
     global USER_STEPS
+    global klassz
     print("STEPS: " + str(USER_STEPS) + "/10 ", end="")
     print("| MENTOR: tesztMentor", end="")  # getMentorNaickname
-    print("| CLASS: tesztClass", end="")  # getClassName
+    print("| CLASS: {}".format("a"), end="")  # getClassName
     print("\n" * 5)
 
 
@@ -91,9 +93,9 @@ def steps():
             print(MENU_POSITION)
             draw_menu("")
             do_action()
-
         elif chr == "q":
             exit()
+    os.system("clear")
     Company.apply_for_company()
 
 

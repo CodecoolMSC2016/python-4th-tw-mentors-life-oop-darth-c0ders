@@ -28,23 +28,32 @@ class Tools:
     @classmethod
     def read_book(cls):
         for student in codecool_class.CodecoolClass.STUDENTS_LIST:
-            student.energy_level += random.randint(-10, 0)
-            student.knowledge_level += random.randint(0, 10)
+            plus_k = random.randint(-10, 20)
+            plus_e = random.randint(-10, 0)
+            student.energy_level += plus_e
+            student.knowledge_level += plus_k
             print("{} {} read a book, called \033[94m{}\033[0m | E: {} K: {}".format(student.first_name,
                                                                                      student.last_name, random.choice(
                                                                                          book_list),
-                                                                                     student.energy_level,
-                                                                                     student.knowledge_level))
+                                                                                     plus_e,
+                                                                                     plus_k))
 
     @classmethod
-    def laptoping(cls, obj):
-        laptop = random.choice(laptop_list)
-        obj.energy_level += random.randint(laptop[1], laptop[2])
-        obj.knowledge_level += random.randint(laptop[3], laptop[4])
-
-        print("{0} consumed a(n) {1}".format(obj.last_name + obj.first_name, laptop[0]))
+    def laptoping(cls):
+        for student in codecool_class.CodecoolClass.STUDENTS_LIST:
+            plus_k = random.randint(laptop[1], laptop[2])
+            plus_e = random.randint(laptop[3], laptop[4])
+            laptop = random.choice(laptop_list)
+            student.energy_level += plus_e
+            student.knowledge_level += plus_k
+            print("{} {} used the laptop for {} | E: {} K: {}".format(student.first_name,
+                                                                      student.last_name, random.choice(laptop_list), plus_e, plus_k))
 
     @classmethod
-    def make_presentation(cls, student):
-        student.energy_level += random.randint(-12, -6)
-        student.knowledge_level += random.randint(2, 8)
+    def make_presentation(cls):
+        for student in codecool_class.CodecoolClass.STUDENTS_LIST:
+            plus_k = random.randint(2, 10)
+            plus_e = random.randint(-8, 2)
+            student.energy_level += plus_e
+            student.knowledge_level += plus_k
+        print("You done with the presentation")

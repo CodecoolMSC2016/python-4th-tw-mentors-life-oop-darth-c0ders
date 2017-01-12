@@ -7,6 +7,7 @@ from tools import Tools
 from kitchen import Kitchen
 from lounge import Lounge
 from company import *
+klassz = ""
 
 
 def buildProgram():
