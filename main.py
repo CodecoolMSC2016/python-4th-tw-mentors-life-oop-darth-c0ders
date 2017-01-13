@@ -41,9 +41,11 @@ def getchar():
 def draw_steps():
     global USER_STEPS
     global klassz
+    random_mentor = random.choice(CodecoolClass.MENTORS_LIST)
     print("STEPS: " + str(USER_STEPS) + "/10 ", end="")
-    print("| MENTOR: tesztMentor", end="")  # getMentorNaickname
-    print("| CLASS: {}".format("a"), end="")  # getClassName
+    print("| MENTOR: {} '{}' {} ".format(random_mentor.last_name, random_mentor.nick_name,
+                                         random_mentor.first_name), end="")  # getMentorNaickname
+    print("| CLASS: {}".format(klassz.name), end="")  # getClassName
     print("\n" * 5)
 
 
@@ -131,7 +133,7 @@ def do_action():
     elif MENU_POSITION == 12:
         Tools.read_book()
     elif MENU_POSITION == 13:
-        print("ASDASDASD")
+        print("Congrats, you just wasted a step.")
     else:
         pass
     wait_for_next()

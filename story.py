@@ -7,13 +7,12 @@ from tools import Tools
 from kitchen import Kitchen
 from lounge import Lounge
 from company import *
-klassz = ""
+klassz = CodecoolClass
 
 
 def buildProgram():
     CodecoolClass.import_mentors()
     CodecoolClass.import_students()
-    klassz = CodecoolClass
     klassz.name = input("Give the school name: ")
 
     student_count = str(len(CodecoolClass.STUDENTS_LIST))
